@@ -1,0 +1,884 @@
+body {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  align-items: right;
+  background-color: var(--collection-1-static-white);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  align-items: right;
+  background-color: var(--collection-1-static-white);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home .header {
+  display: flex;
+  max-width: 1440px;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: var(--collection-1-static-white);
+  gap: var(--collection-1-space-0);
+}
+
+.home .container-header {
+  display: flex;
+  max-width: 1440px;
+  align-items: center;
+  justify-content: center;
+  gap: var(--collection-1-space-12);
+  padding: var(--collection-1-space-12) var(--space-space-0)
+    var(--collection-1-space-12) var(--space-space-0);
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: var(--collection-1-static-white);
+}
+
+.home .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--collection-1-space-8);
+  padding: var(--collection-1-space-8) var(--collection-1-space-20)
+    var(--collection-1-space-8) var(--collection-1-space-20);
+  flex: 0 0 auto;
+  border-radius: 12px;
+}
+
+.home .snowflake {
+  width: 24px;
+  height: 24px;
+}
+
+.home .items-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  align-self: stretch;
+  flex-grow: 1;
+  gap: var(--collection-1-space-0);
+}
+
+.home .items {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--collection-1-space-8);
+  flex: 0 0 auto;
+}
+
+.home .item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--collection-1-space-12) var(--collection-1-space-20)
+    var(--collection-1-space-12) var(--collection-1-space-20);
+  flex: 0 0 auto;
+  border-radius: 12px;
+  gap: var(--collection-1-space-0);
+  color: var(--collection-1-dark);
+  width: fit-content;
+  font-family: var(--action-small-font-family);
+  font-weight: var(--action-small-font-weight);
+  font-size: var(--action-small-font-size);
+  letter-spacing: var(--action-small-letter-spacing);
+  line-height: var(--action-small-line-height);
+  font-style: var(--action-small-font-style);
+}
+
+.home .hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1440px;
+  height: 524px;
+  border-radius: 20px 20px 0px 0px;
+  overflow: hidden;
+  background-image: url("./img/home/bg-ball.png"), url("./img/home/bg-snow.png");
+  background-position: center, center;
+  background-size: cover, cover;
+  background-color: #ff4646;
+  gap: var(--collection-1-space-0);
+  margin: 0 auto;
+  padding: var(--collection-1-space-60) var(--collection-1-space-0);
+}
+
+.home .container-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 426px;
+  height: 404px;
+  gap: var(--collection-1-space-12);
+}
+
+.home .header-1 {
+  font-family: var(--header-1-font-family);
+  font-weight: var(--header-1-font-weight);
+  color: var(--collection-1-static-white);
+  font-size: var(--header-1-font-size);
+  letter-spacing: var(--header-1-letter-spacing);
+  line-height: var(--header-1-line-height);
+  font-style: var(--header-1-font-style);
+  text-align: center;
+  margin: 0;
+}
+
+/* Общий стиль для caption и 3 цвета к нему */
+.caption {
+  font-family: var(--caption-font-family);
+  font-weight: var(--caption-font-weight);
+  font-size: var(--caption-font-size);
+  text-align: center;
+  letter-spacing: var(--caption-letter-spacing);
+  line-height: var(--caption-line-height);
+  font-style: var(--caption-font-style);
+  margin: 0;
+}
+
+.white-caption {
+  color: var(--collection-1-static-white);
+}
+
+.red-caption {
+  color: var(--collection-1-primary);
+}
+
+.black-caption {
+  color: var(--collection-1-dark);
+}
+
+.button {
+  width: 236px;
+  height: 56px;
+  padding: var(--collection-1-space-20) var(--collection-1-space-32);
+  background: var(--collection-1-dark);
+  border: none;
+  border-radius: 20px;
+  color: var(--collection-1-static-white);
+  font-size: var(--action-small-font-size);
+  font-family: var(--action-small-font-family);
+  font-weight: var(--action-small-font-weight);
+  line-height: var(--action-small-line-height);
+  letter-spacing: var(--action-small-letter-spacing);
+  font-style: var(--action-small-font-style);
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: var(--collection-1-static-white);
+  color: var(--collection-1-dark);
+}
+
+.home .about-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--collection-1-space-60) var(--collection-1-space-8)
+    var(--collection-1-space-60) var(--collection-1-space-8);
+  background-image: url(./img/about-section.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+  gap: var(--collection-1-space-0);
+  background-color: var(--collection-1-primary);
+}
+
+.home .container-about {
+  display: flex;
+  max-width: 1276px;
+  align-items: center;
+  flex: 1;
+  flex-grow: 1;
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  gap: var(--collection-1-space-0);
+  justify-content: space-between;
+}
+
+.home .container-about-wrapper {
+  padding: var(--collection-1-space-0) var(--collection-1-space-60);
+  max-width: 638px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+}
+
+.home .container-about-text {
+  width: 426px;
+  height: 328px;
+  gap: var(--collection-1-space-20);
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+}
+
+/* Нужно выпилить */
+/* .home .caption {
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: var(--caption-font-family);
+  font-weight: var(--caption-font-weight);
+  font-size: var(--caption-font-size);
+  letter-spacing: var(--caption-letter-spacing);
+  line-height: var(--caption-line-height);
+  font-style: var(--caption-font-style);
+} */
+
+.home .header-2 {
+  align-self: stretch;
+  font-family: var(--header-2-font-family);
+  font-weight: var(--header-2-font-weight);
+  font-size: var(--header-2-font-size);
+  letter-spacing: var(--header-2-letter-spacing);
+  line-height: var(--header-2-line-height);
+  font-style: var(--header-2-font-style);
+  margin: 0;
+}
+
+.white-header-2 {
+  color: var(--collection-1-static-white);
+  text-align: center;
+}
+
+.black-header-2 {
+  color: var(--collection-1-dark);
+}
+
+.paragraph {
+  align-self: stretch;
+  font-family: var(--paragraph-font-family);
+  font-weight: var(--paragraph-font-weight);
+  color: var(--collection-1-dark);
+  font-size: var(--paragraph-font-size);
+  letter-spacing: var(--paragraph-letter-spacing);
+  line-height: var(--paragraph-line-height);
+  font-style: var(--paragraph-font-style);
+  margin: 0;
+}
+
+.paragraph-center {
+  text-align: center;
+}
+
+.home .container-santa {
+  width: 638px;
+  height: 528px;
+  border-radius: 20px;
+  overflow: hidden;
+  gap: var(--space-space-0-duplicate);
+}
+
+.home .santa {
+  width: 638px;
+  height: 528px;
+  object-fit: cover;
+}
+
+.home .slider-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 488px;
+  background-image: url(./img/home/bg-snow.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  gap: var(--collection-1-space-0);
+  background-color: var(--collection-1-primary);
+}
+
+.home .container-slider {
+  height: 368px;
+  width: 1276px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: var(--collection-1-space-60) var(--collection-1-space-0);
+}
+
+.home .container-slider-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home .row {
+  display: flex;
+}
+
+.home .slider {
+  display: flex;
+  gap: 20px;
+}
+
+.slider-text {
+  font-family: var(--slider-font-family);
+  font-weight: var(--slide-font-weight);
+  color: var(--collection-1-static-white);
+  font-size: var(--slider-font-size);
+  letter-spacing: var(--slider-letter-spacing);
+  line-height: var(--slider-line-height);
+  font-style: var(--slider-font-style);
+  text-align: center;
+}
+
+.home .img-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
+  gap: var(--collection-1-space-0);
+}
+
+.home .img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Надо выпилить */
+/* .home .header-3 {
+  align-self: stretch;
+  font-family: var(--header-2-font-family);
+  font-weight: var(--header-2-font-weight);
+  color: var(--collection-1-static-white);
+  font-size: var(--header-2-font-size);
+  letter-spacing: var(--header-2-letter-spacing);
+  line-height: var(--header-2-line-height);
+  font-style: var(--header-2-font-style);
+  text-align: center;
+} */
+
+.home .arrow-button {
+  align-self: stretch;
+  width: 56px;
+  height: 56px;
+  border-radius: 20px;
+  color: var(--collection-1-static-white);
+  background: transparent;
+  border: 1px solid var(--collection-1-static-white);
+  cursor: pointer;
+}
+
+.home .arrow-button:hover {
+  color: var(--collection-1-primary);
+  background: var(--collection-1-static-white);
+  cursor: pointer;
+}
+
+.home .arrow-button:disabled {
+  color: var(--collection-1-static-white-40);
+  background: transparent;
+}
+
+.button-container {
+  width: 1276px;
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+}
+
+.home .best-gifts-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  width: 1440px;
+  height: 554px;
+  flex: 0 0 auto;
+  background-image: url(./img/best-gifts-section.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: var(--collection-1-primary);
+}
+
+.container-gifts {
+  display: flex;
+  flex-direction: column;
+  gap: var(--collection-1-space-20);
+}
+
+.container-gifts-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--collection-1-space-12);
+}
+
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--collection-1-space-12);
+  align-self: stretch;
+  width: 1276px;
+  flex: 0 0 auto;
+}
+
+.card {
+  width: 310px;
+  height: 342px;
+  background-color: var(--collection-1-content-background);
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.home .image {
+  flex: 1;
+  align-self: stretch;
+  width: 100%;
+  flex-grow: 1;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: var(--collection-1-space-20) var(--collection-1-space-20);
+  gap: 8px;
+  text-align: left;
+  border-radius: 20px;
+  height: 112px;
+  background-color: var(--collection-1-static-white);
+}
+
+.home .header-3 {
+  color: var(--collection-1-dark);
+  font-size: var(--header-3-font-size);
+  letter-spacing: var(--header-3-letter-spacing);
+  line-height: var(--header-3-line-height);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: var(--header-3-font-family);
+  font-weight: var(--header-3-font-weight);
+  font-style: var(--header-3-font-style);
+  margin: 0;
+}
+
+.home .header-4 {
+  width: fit-content;
+  margin-top: -1px;
+  /* color: var(--collection-1-tag-pink); */
+  white-space: nowrap;
+  font-family: var(--header-4-font-family);
+  font-weight: var(--header-4-font-weight);
+  font-size: var(--header-4-font-size);
+  letter-spacing: var(--header-4-letter-spacing);
+  line-height: var(--header-4-line-height);
+  font-style: var(--header-4-font-style);
+  margin: 0;
+}
+
+.purple-header-4 {
+  color: var(--collection-1-tag-purple);
+}
+
+.green-header-4 {
+  color: var(--collection-1-tag-green);
+}
+
+.pink-header-4 {
+  color: var(--collection-1-tag-pink);
+}
+
+.white-header-4 {
+  color: var(--collection-1-static-white);
+}
+
+/* .card-label {
+  font-family: var—(header-4-font-family);
+  font-weight: var—(--header-4-font-weight);
+  font-size: var—(--header-4-font-size);
+  letter-spacing: var—(--header-4-letter-spacing);
+  line-height: var—(--header-4-line-height);
+  font-style: var—(--header-4-font-style);
+  color: var(--collection-1-tag-purple);
+}
+
+.card-title {
+  font-family: var—(header-3-font-family);
+  font-weight: var—(--header-3-font-weight);
+  font-size: var—(--header-3-font-size);
+  letter-spacing: var—(--header-3-letter-spacing);
+  line-height: var—(--header-3-line-height);
+  font-style: var—(--header-3-font-style);
+  color: var(--collection-1-dark);
+} */
+
+/* 
+.home .header-4 {
+  width: fit-content;
+  margin-top: -1px;
+  color: var(--collection-1-tag-purple);
+  font-size: var(--header-4-font-size);
+  letter-spacing: var(--header-4-letter-spacing);
+  line-height: var(--header-4-line-height);
+  white-space: nowrap;
+  font-family: var(--header-4-font-family);
+  font-weight: var(--header-4-font-weight);
+  font-style: var(--header-4-font-style);
+}
+
+
+.home .header-6 {
+  width: fit-content;
+  margin-top: -1px;
+  color: var(--collection-1-tag-green);
+  white-space: nowrap;
+  font-family: var(--header-4-font-family);
+  font-weight: var(--header-4-font-weight);
+  font-size: var(--header-4-font-size);
+  letter-spacing: var(--header-4-letter-spacing);
+  line-height: var(--header-4-line-height);
+  font-style: var(--header-4-font-style);
+}
+
+.home .card-2 {
+  display: inline-flex;
+  flex-direction: column;
+  height: 342px;
+  align-items: center;
+  flex: 0 0 auto;
+  background-color: var(--collection-1-content-background);
+  border-radius: 20px;
+  gap: var(--collection-1-space-0);
+} */
+
+.home .CTA-sectoin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  align-self: stretch;
+  width: 1440px;
+  height: 668px;
+  padding: var(--collection-1-space-60) var(--space-space-0);
+  flex: 0 0 auto;
+  border-radius: 0px 0px 20px 20px;
+  background-image: url(./img/home/bg-forest.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  gap: var(--collection-1-space-0);
+  background-color: var(--collection-1-primary);
+}
+
+.home .container-CTA {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 1276px;
+  height: 548px;
+  align-items: center;
+  padding: var(--collection-1-space-60) var(--collection-1-space-0);
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  border-radius: 20px;
+  gap: var(--collection-1-space-0);
+}
+
+.home .container-CTA-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 426px;
+  align-items: center;
+  justify-content: center;
+  gap: var(--collection-1-space-20);
+  padding: var(--collection-1-space-60) var(--collection-1-space-0)
+    var(--collection-1-space-60) var(--collection-1-space-0);
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.home .container-timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--collection-1-space-8);
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.home .timer {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--collection-1-space-8) var(--collection-1-space-12)
+    var(--collection-1-space-12) var(--collection-1-space-12);
+  flex: 0 0 auto;
+  background-color: var(--collection-1-static-white-40);
+  border-radius: 20px;
+  gap: var(--collection-1-space-0);
+}
+
+.home .container-value {
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  align-items: center;
+  gap: var(--collection-1-space-0);
+}
+
+/* Нужно выпилить */
+/* .home .header-6 {
+  margin-top: -1px;
+  color: var(--collection-1-static-white);
+  text-align: center;
+  align-self: stretch;
+  font-family: var(--header-2-font-family);
+  font-weight: var(--header-2-font-weight);
+  font-size: var(--header-2-font-size);
+  letter-spacing: var(--header-2-letter-spacing);
+  line-height: var(--header-2-line-height);
+  font-style: var(--header-2-font-style);
+} */
+
+/* Нужно выпилить */
+/* .home .header-7 {
+  align-self: stretch;
+  color: var(--collection-1-static-white);
+  text-align: center;
+  font-family: var(--header-4-font-family);
+  font-weight: var(--header-4-font-weight);
+  font-size: var(--header-4-font-size);
+  letter-spacing: var(--header-4-letter-spacing);
+  line-height: var(--header-4-line-height);
+  font-style: var(--header-4-font-style);
+} */
+
+.home .separator {
+  width: 1px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.home .footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 496px;
+  padding: var(--collection-1-space-60) var(--space-space-8);
+  width: 1440px;
+  background-color: var(--collection-1-static-white);
+  gap: var(--collection-1-space-0);
+}
+
+.home .container-footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 1276px;
+  height: 376px;
+  align-items: center;
+  gap: var(--collection-1-space-60);
+  align-self: stretch;
+  flex: 0 0 auto;
+}
+
+.home .container-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--collection-1-space-12);
+  align-self: stretch;
+  width: 1276px;
+  height: 204px;
+  flex: 0 0 auto;
+  border-radius: 60px;
+}
+
+.home .card-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--collection-1-space-12);
+  padding: var(--collection-1-space-20);
+  flex: 1;
+  flex-grow: 1;
+  background-color: var(--collection-1-content-background);
+  border-radius: 20px;
+}
+
+.home .img-2 {
+  width: 80px;
+  height: 80px;
+}
+
+.action-large {
+  align-self: stretch;
+  font-size: var(--action-large-font-size);
+  text-align: center;
+  letter-spacing: var(--action-large-letter-spacing);
+  line-height: var(--action-large-line-height);
+  font-family: var(--action-large-font-family);
+  font-weight: var(--action-large-font-weight);
+  color: var(--collection-1-dark);
+  font-style: var(--action-large-font-style);
+  margin: 0;
+}
+
+/* Можно выпилить */
+/* .home .header-8 {
+  align-self: stretch;
+  font-family: var(--header-3-font-family);
+  font-weight: var(--header-3-font-weight);
+  color: var(--collection-1-dark);
+  font-size: var(--header-3-font-size);
+  text-align: center;
+  letter-spacing: var(--header-3-letter-spacing);
+  line-height: var(--header-3-line-height);
+  font-style: var(--header-3-font-style);
+} */
+
+.home .container-socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--collection-1-space-12);
+  align-self: stretch;
+  width: 100%;
+  height: 112px;
+  flex: 0 0 auto;
+}
+
+.home .socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--collection-1-space-12);
+  flex: 0 0 auto;
+  width: 196px;
+  height: 40px;
+}
+
+.home .img-sicials {
+  /* ширина 24px получается почему-то */
+  width: 40px;
+  height: 40px;
+}
+
+/* .home .paragraph-2 { Уже есть параграф, отличается только центрирование
+  width: fit-content;
+  font-family: var(--paragraph-font-family);
+  font-weight: var(--paragraph-font-weight);
+  color: var(--collection-1-dark);
+  font-size: var(--paragraph-font-size);
+  text-align: center;
+  letter-spacing: var(--paragraph-letter-spacing);
+  line-height: var(--paragraph-line-height);
+  white-space: nowrap;
+  font-style: var(--paragraph-font-style);
+} */
+
+/* .home .caption-2 {
+  width: fit-content;
+  color: var(--collection-1-dark);
+  text-align: center;
+  white-space: nowrap;
+  font-family: var(--caption-font-family);
+  font-weight: var(--caption-font-weight);
+  font-size: var(--caption-font-size);
+  letter-spacing: var(--caption-letter-spacing);
+  line-height: var(--caption-line-height);
+  font-style: var(--caption-font-style);
+} */
+
+:root {
+  --header-1-font-family: "Montserrat", Helvetica;
+  --header-1-font-weight: 600;
+  --header-1-font-size: 32px;
+  --header-1-letter-spacing: 5.76px;
+  --header-1-line-height: 150%;
+  --header-1-font-style: normal;
+  --header-2-font-family: "Montserrat", Helvetica;
+  --header-2-font-weight: 600;
+  --header-2-font-size: 24px;
+  --header-2-letter-spacing: 3.84px;
+  --header-2-line-height: 152%;
+  --header-2-font-style: normal;
+  --header-3-font-family: "Montserrat", Helvetica;
+  --header-3-font-weight: 600;
+  --header-3-font-size: 16px;
+  --header-3-letter-spacing: 1.28px;
+  --header-3-line-height: 152%;
+  --header-3-font-style: normal;
+  --header-4-font-family: "Montserrat", Helvetica;
+  --header-4-font-weight: 600;
+  --header-4-font-size: 12px;
+  --header-4-letter-spacing: 0.6px;
+  --header-4-line-height: 130%;
+  --header-4-font-style: normal;
+  --paragraph-font-family: "Montserrat", Helvetica;
+  --paragraph-font-weight: 400;
+  --paragraph-font-size: 16px;
+  --paragraph-letter-spacing: 0px;
+  --paragraph-line-height: 24px;
+  --paragraph-font-style: normal;
+  --action-large-font-family: "Montserrat", Helvetica;
+  --action-large-font-weight: 600;
+  --action-large-font-size: 24px;
+  --action-large-letter-spacing: 3.84px;
+  --action-large-line-height: 152%;
+  --action-large-font-style: normal;
+  --action-small-font-family: "Montserrat", Helvetica;
+  --action-small-font-weight: 600;
+  --action-small-font-size: 12px;
+  --action-small-letter-spacing: 0.6px;
+  --action-small-line-height: 130%;
+  --action-small-font-style: normal;
+  --caption-font-family: "Allura", Helvetica;
+  --caption-font-weight: 400;
+  --caption-font-size: 24px;
+  --caption-letter-spacing: 1.2px;
+  --caption-line-height: 100%;
+  --caption-font-style: normal;
+  --slider-text-font-family: "Montserrat", Helvetica;
+  --slider-text-font-weight: 600;
+  --slider-text-font-size: 80px;
+  --slider-text-letter-spacing: 0px;
+  --slider-text-line-height: auto;
+  --slider-text-font-style: normal;
+  --collection-1-primary: rgba(255, 70, 70, 1);
+  --collection-1-primary-10: rgba(255, 70, 70, 0.1);
+  --collection-1-dark: rgba(24, 28, 41, 1);
+  --collection-1-static-white: rgba(255, 255, 255, 1);
+  --collection-1-static-white-40: rgba(255, 255, 255, 0.4);
+  --collection-1-static-white-20: rgba(255, 255, 255, 0.2);
+  --collection-1-content-background: rgba(236, 243, 248, 1);
+  --collection-1-tag-purple: rgba(67, 97, 255, 1);
+  --collection-1-tag-pink: rgba(255, 67, 247, 1);
+  --collection-1-tag-green: rgba(6, 164, 79, 1);
+  --collection-1-overlay: rgba(24, 28, 41, 0.8);
+  --collection-1-space-0: 0px;
+  --collection-1-space-8: 8px;
+  --collection-1-space-12: 12px;
+  --collection-1-space-20: 20px;
+  --collection-1-space-32: 32px;
+  --collection-1-space-60: 60px;
+}
